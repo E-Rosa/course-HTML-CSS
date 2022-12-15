@@ -1,0 +1,13 @@
+/*
+    The two main properties that take colors in CSS are
+    background-color and color.
+    background-color is self-explanatory, and color is
+    responsible for the color of the text. See below.
+*/
+
+.box{
+    width:100px;
+    height:100px;
+    background-color: black;
+    color:white;
+}

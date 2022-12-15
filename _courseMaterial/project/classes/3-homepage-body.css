@@ -1,0 +1,20 @@
+main{
+    width:100%;
+    min-height:75vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+main .homepage-body{
+    max-width:300px;
+    padding:2em;
+    border-radius:10px;
+    background-color:var(--deep-black);
+    box-shadow:5px 5px 5px var(--neon-purple)
+}
+main h1{
+    color:white;
+}
+main h4{
+    color:white;
+}

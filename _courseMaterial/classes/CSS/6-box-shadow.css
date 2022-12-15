@@ -1,0 +1,28 @@
+/*
+    box-shadow is a cool and easy way to add a shadow
+    to our elements.
+    box-shadow can take from 3 to 5 arguments: 
+        1. The horizontal offset. Positives mean offset to the right.
+        Negatives mean offset to the left.
+        2. The vertical offset. Positives mean offset to the bottom.
+        Negatives mean offset to the top.
+        3. the blur. Bigger value = bigger blur
+        4. the spread. Bigger value = bigger spread.
+*/
+
+.box{
+    width:100px;
+    height:100px;
+    border:1px solid black;
+    border-radius:10px;
+    margin-bottom: 20px;
+}
+.one{
+    box-shadow: 5px 5px black;
+}
+.two{
+    box-shadow: 5px 5px 5px black;
+}
+.three{
+    box-shadow: 5px 5px 5px 5px black;
+}

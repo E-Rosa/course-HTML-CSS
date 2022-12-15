@@ -1,0 +1,29 @@
+/*
+STEP 1:
+    Since we already know that CSS is the language responsible
+    for stylizing our HTML elements, we first need a way to tell
+    out HTML file which CSS file to use. For that we will use a <link>
+    tag in our <head> and give it the attribute *href*
+    and set it equal to the path to our CSS file.
+    Also, we'll give it a *rel* attribute and set it equal to
+    'stylesheet'.
+    Check out './1-how-to-use-css.html' to see it working.
+*/
+
+/*
+STEP 2: 
+    Now that we have connected our HTML file with our CSS file,
+    we'll choose which elements we want to modify the styles of
+    and SELECT them. the easiest way to SELECT elements is to 
+    simply type the element name and open curly braces {}, see below.
+*/
+body{
+    background-color: red;
+}
+/*
+STEP 3:
+    Now that we SELECTED our elements, we can apply new properties
+    to this element to change it's styles. 
+    Check out https://www.w3schools.com/cssref/index.php
+    for a complete list of attributes and how to use them.
+*/

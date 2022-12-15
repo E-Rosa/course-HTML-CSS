@@ -1,0 +1,17 @@
+/*
+    CSS variables are a way to store values, usually colors, so
+    there is no need to copy and paste the RGB or HEX values.
+    Here is how it works:
+        Usually in the :root{} element, we declare our variables, as in:
+*/
+:root{
+    --favorite-black: rgb(0,0,0)
+}
+/*
+    And we can use those variables using the var() syntax, as in:
+*/
+.box{
+    width:100px;
+    height:100px;
+    background-color: var(--favorite-black);
+}

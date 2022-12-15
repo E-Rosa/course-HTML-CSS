@@ -1,0 +1,70 @@
+/*
+    The width and height elements are important to understand 
+    how elements work in CSS. Let's say you have an element with
+    zero content inside of it. So no other element and no text, as in
+        <div></div>
+    This element will not show in the DOM visually because it has no height
+    and no width as well as no content inside of it.
+    Even though that is the case, it is almost always better to define
+    the size of your elements based on the content that will go inside
+    of it rather than a fixed size. This is the case because if you set
+    a definite height and width to your element, such as in
+        div{
+            height:1000px;
+            width:1000px;
+        }
+    If it is the case that your user is in a cellphone while accessing 
+    your website, 1000px of width will be way bigger than his screen.
+    So the website will not be RESPONSIVE. Responsive means it is usable
+    in any (or almost any) size of screen. 
+
+    A solution to that can come in the form of CSS units of measure.
+    We'll see: %, em, vh and vw
+*/
+
+/*
+The % unit:
+    This unit will depend on the size of the parent element that
+    contains the element being selected. So if the width of the
+    parent element is, let's say, 1000px, if you set the child element
+    to width:100%;, your child element will have 1000px of width.
+    If it was width:50%, then it would be 500px. See below
+*/
+.parent-element{
+    width:100px;
+    height:100px;
+    background-color: red;
+}
+.child-element{
+    width:50%;
+    height:50%;
+    background-color: black;
+}
+
+/*
+The em unit:
+    The em unit is based on the font-size. For smaller screens,
+    font-size will be naturally smaller, and for big screens, bigger.
+    1em is equal to the font-size. 100em means double of the font-size.
+    See below:
+*/
+
+.em-example{
+    width:2em;
+    height:2em;
+    background-color: black;
+}
+
+/*
+The vw and vh units:
+    vw stands for view-width and vh stands for view-height.
+    100vw means all the width of the browser window, whatever size it may be
+    100vh means all the height of the browser window, whatever size it may be.
+    see below:
+*/
+
+.vw-vh-example{
+    width:30vw;
+    height:30vh;
+    background-color: blue;
+}

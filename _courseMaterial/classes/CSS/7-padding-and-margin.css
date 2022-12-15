@@ -1,0 +1,35 @@
+/*
+    The padding attribute defines the distance between
+    the border and the content inside our element.
+        You can refer to padding-top, padding-bottom, 
+        padding-right and padding-left to manipulate
+        this distance on the specific sides.
+            You can also set all of those mentioned above 
+            using only the padding attribute and giving it
+            2 to 4 values. As in:
+                padding: 10px 5px;
+                    this will set 10px of padding on top and bottom
+                    and 5px of padding on left and right
+                padding: 10px 5px 20px 2px
+                    this will set 10px on top, 5px on right,
+                    20px on bottom and 2px on left
+    
+    The margin element defines the distance between the border and
+    the other elements around this element. The very same rules
+    mentioned above for padding apply for margin.
+    See below:
+*/
+
+.box{
+    width:100px;
+    height:100px;
+    border:1px solid black;
+    border-radius:10px;
+    margin-bottom: 20px;
+}
+.one{
+    padding:1em;
+}
+.two{
+    margin:10em;
+}

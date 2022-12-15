@@ -1,0 +1,17 @@
+/*
+    The two main properties that modify borders in CSS are
+    border and border-radius.
+    border takes tree values:
+        1. the thickness of the border
+        2. the type of border (solid, dotted and others)
+        3. the color of the border.
+    border-radius takes one value:
+        1. how much to round the border, can be in px, % or others.
+*/
+
+.box{
+    width:100px;
+    height:100px;
+    border:1px solid black;
+    border-radius:10px;
+}

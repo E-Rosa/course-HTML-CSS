@@ -1,0 +1,123 @@
+/*
+    Now that we have already seen how to create our containers,
+    adjust their colors, borders, padding, margins and even box-shadows,
+    it is time for the most essential, which is: How to place elements
+    within containers. The biggest challenge when designing a website
+    is placing elements where they should be placed. Flexbox is a way
+    to do that in CSS.
+
+    To use the flexbox we start by setting display:flex;
+    Note that in order to see any changes, we have to have other elements
+    inside of our element with display:flex. 
+
+    flex-direction: dictates whether our elements will be aligned
+    vertically os horizontally. The common values are:
+        flex-direction: column, row;
+    
+    align-items: dictates how the elements will be positioned
+    vertically if flex-direction:row; or how the elements will be
+    positioned horizontally if flex-direction:column;
+    The common values are:
+        align-items:center, flex-start, flex-end
+
+    justify-content: dictates how the elements will be positioned
+    horizontally if flex-direction:row; or how the elements will be
+    positioned vertically if flex-direction:column;
+    The common values are:
+        justify-content:center, flex-start, flex-end, space-around, space-between
+
+    gap: defines the distance between elements in a flexbox
+    For example:
+        gap: 10px
+            will create a 10px gap between each element in a flexbox
+
+    flex-wrap: dictates whether the elements should break and create a new
+    row or column when the flexbox overflows.
+    The common values are:
+        flex-wrap: wrap, no-wrap
+
+    align-self and justify-self: modifies the alignment of the element
+    within a flexbox. 
+    The common values are:
+        align-self: center, flex-end, flex-start
+*/
+#test-square{
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-items: flex-start;
+    align-content: flex-start;
+    margin:0;
+    height:100vh;
+    flex-wrap: wrap;
+}
+.square{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:100px;
+    height:100px;
+    background-color: pink;
+    margin-left: 5vw;
+    margin-top: 2vw;
+}
+.circle{
+    width:20px;
+    height:20px;
+    background-color: rgb(110, 118, 235);
+    border-radius:100%;
+}
+
+#square1{
+    align-items:flex-start;
+}
+#square2{
+    align-items:flex-end;
+}
+#square3{
+    justify-content: flex-start;
+}
+#square4{
+    justify-content: flex-end;
+}
+#square5{
+    gap: 10%;
+    align-items:flex-start;
+    flex-wrap:wrap;
+}
+#square6{
+    gap: 10%;
+    flex-wrap:wrap;
+}
+#square7{
+    gap: 10%;
+    flex-wrap:wrap;
+    align-items:flex-end;
+}
+#square8{
+    justify-content: space-around;
+}
+#square9{
+    flex-direction: column;
+    justify-content: space-around;
+}
+#square10{
+    flex-wrap: wrap;
+    gap:10%;
+}
+#square11{
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:10%;
+    align-items: space-around;
+}
+#circle5{
+    align-self: flex-start;
+}
+#circle7{
+    align-self: flex-end;
+}

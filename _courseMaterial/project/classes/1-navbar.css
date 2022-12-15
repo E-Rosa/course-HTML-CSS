@@ -1,0 +1,15 @@
+/*Header--------------------------------*/
+header{
+    width:100%;
+    padding:1em 0em;
+    margin-bottom:3vh;
+    background-color:var(--deep-black);
+    /*right-left, top-down, blur, spread, color*/
+    box-shadow: 0px 3px 5px 2px var(--neon-purple)
+}
+header nav a{
+    margin-left:3vw;
+    color:white;
+    text-decoration: none;
+    font-size:1.3em;
+}

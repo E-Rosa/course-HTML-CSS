@@ -1,0 +1,14 @@
+main{
+    display:flex;
+    justify-content: center;
+    min-height:70vh;
+}
+main .post{
+    min-height:50vh;
+    max-width:600px;
+    padding:2em;
+    border-radius:10px;
+    color:white;
+    background-color: var(--deep-black);
+    box-shadow:5px 5px 5px var(--neon-purple);
+}

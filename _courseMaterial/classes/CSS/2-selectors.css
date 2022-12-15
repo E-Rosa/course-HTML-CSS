@@ -1,0 +1,49 @@
+/*
+    There is a variety of ways to select HTML elements
+    and edit them in CSS, we'll learn only the most used
+    and most important.
+*/
+
+/*
+SELECTOR 1: class.
+    We use a period (.) before the class name to select all elements
+    that have this class
+*/
+.square{
+    width:100px;
+    height:100px;
+    background-color: red;
+}
+
+/*
+SELECTOR 2: id.
+    We use a hashtag (#) before the id name to select all elements
+    that have this id
+*/
+#circle{
+    width:100px;
+    height:100px;
+    background-color: red;
+    border-radius:100%;
+}
+
+/*
+SELECTOR 3: nested elements
+    We use the type (could be class, id or tag) followed by a space
+    and another type (class, id or tag) to select the last element we type
+    as in:
+        main div p{
+
+        }
+        this will select all <p> elements that are inside a <div>
+        that are inside a <main>, something like
+            <main>
+                <div>
+                    <p> </p> -> this will be selected
+                </div>
+            </main>
+    check below:
+*/
+main p{
+    color:red;
+}
